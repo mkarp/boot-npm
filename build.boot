@@ -3,7 +3,7 @@
                   [boot/core           "2.7.2"]
                   [cheshire            "5.7.1"]
                   [degree9/boot-semver "1.7.0" :scope "test"]
-                  [degree9/boot-io     "1.3.0"]
+                  [mkarp/degree9-boot-io "1.3.3"]
                   [mkarp/degree9-boot-exec "1.1.2"]]
  :resource-paths   #{"src"})
 
