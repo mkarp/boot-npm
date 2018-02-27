@@ -4,7 +4,7 @@
                   [cheshire            "5.7.1"]
                   [degree9/boot-semver "1.7.0" :scope "test"]
                   [degree9/boot-io     "1.3.0"]
-                  [degree9/boot-exec   "1.1.1-SNAPSHOT"]]
+                  [mkarp/degree9-boot-exec "1.1.2"]]
  :resource-paths   #{"src"})
 
 (require
@@ -13,10 +13,10 @@
 
 (task-options!
   target {:dir #{"target"}}
-  pom {:project 'degree9/boot-npm
+  pom {:project 'mkarp/degree9-boot-npm
        :description "boot-clj task for wrapping npm"
-       :url         "https://github.com/degree9/boot-npm"
-       :scm         {:url "https://github.com/degree9/boot-npm"}})
+       :url         "https://github.com/mkarp/degree9-boot-npm"
+       :scm         {:url "https://github.com/mkarp/degree9-boot-npm"}})
 
 (deftask develop
   "Build boot-npm for development."
