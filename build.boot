@@ -5,7 +5,10 @@
                   [degree9/boot-semver "1.7.0" :scope "test"]
                   [mkarp/degree9-boot-io "1.3.3"]
                   [mkarp/degree9-boot-exec "1.1.2"]]
- :resource-paths   #{"src"})
+ :resource-paths   #{"src"}
+ :repositories #(conj % ["clojars" {:url "https://clojars.org/repo/"
+                                    :username (System/getenv "CLOJARS_USER")
+                                    :password (System/getenv "CLOJARS_PASS")}]))
 
 (require
   '[degree9.boot-npm :refer :all]
